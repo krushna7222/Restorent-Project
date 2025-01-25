@@ -1,0 +1,45 @@
+#navbar {
+  width: 100vw;
+  height: 150px;
+  background-color: rgb(0, 255, 47);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+#image {
+  height: 150px;
+}
+img {
+  width: 130px;
+  height: 130px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+#menuitems > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuitems > ul > li {
+  margin-left: 5vw;
+}
+
+#options > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+#options > ul > li {
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  #navbar {
+    font-size: 16px;
+  }
+}
