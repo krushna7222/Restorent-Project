@@ -7,9 +7,9 @@
   align-items: center;
   font-size: 20px;
 }
-#image {
+/* #image {
   height: 150px;
-}
+} */
 img {
   width: 130px;
   height: 130px;
@@ -40,6 +40,14 @@ img {
 }
 @media screen and (max-width: 768px) {
   #navbar {
+    height: 100px;
     font-size: 16px;
+  }
+  img {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
   }
 }
