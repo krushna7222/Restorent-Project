@@ -19,6 +19,7 @@ const Header = () => {
             and served in an elegant ambiance. Whether it's a special occasion
             or a casual outing, we promise to make every moment unforgettable.
           </p>
+          <button>Explore Menu</button>
         </div>
         <div className="image">
           <img id="homeimage" src="src\assets\welcome.png" alt="Top Image" />
