@@ -7,8 +7,6 @@
   align-items: center;
   font-size: 20px;
   background-color: rgb(3, 3, 3);
-  /* position: absolute; */
-  /* top: 0; */
 }
 
 a {
@@ -53,6 +51,7 @@ i {
 }
 
 /* megamenu  */
+
 .rightmenu {
   display: none;
   position: relative;
