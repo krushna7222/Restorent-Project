@@ -15,6 +15,9 @@ a {
   text-decoration: none;
   color: #f5efff;
 }
+#image {
+  z-index: 2;
+}
 img {
   width: 130px;
   height: 130px;
