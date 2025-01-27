@@ -17,13 +17,15 @@ button {
   background-color: white;
   color: black;
   padding: 15px 20px;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   cursor: pointer;
+  font-weight: 600;
 }
 
 section {
   scroll-margin-top: 150px;
+  width: 100vw;
   height: auto;
 }
 
