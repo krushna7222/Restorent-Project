@@ -1,12 +1,14 @@
 #navbar {
   width: 100vw;
   height: 150px;
-  background-color: rgb(0, 255, 47);
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 20px;
   background-color: rgb(3, 3, 3);
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 a {
@@ -33,6 +35,10 @@ a {
 #menuitems > ul > li {
   margin-left: 5vw;
   font-weight: 900;
+}
+
+#options {
+  margin-right: 10px;
 }
 
 #options > ul {
@@ -119,7 +125,7 @@ i {
     height: 100px;
     font-size: 16px;
   }
-  img {
+  #navimg {
     width: 90px;
     height: 90px;
     margin-left: 10px;
