@@ -45,25 +45,25 @@ const Navbar = () => {
               </a>
               <ul className="megamenu" id="mega-menu">
                 <li>
-                  <a href="#about">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li>
-                  <a href="#skills">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#projects">Menu</a>
+                  <a href="#menu">Menu</a>
                 </li>
                 <li>
-                  <a href="#cources">Awards</a>
+                  <a href="#awards">Awards</a>
                 </li>
                 <li>
-                  <a href="#experiance">Contact</a>
+                  <a href="#contact">Contact</a>
                 </li>
                 <li>
-                  <a href="#contact">Login/Register</a>
+                  <a href="#login">Login/Register</a>
                 </li>
                 <li>
-                  <a href="#contact">Book Table</a>
+                  <a href="#booktable">Book Table</a>
                 </li>
               </ul>
             </li>
