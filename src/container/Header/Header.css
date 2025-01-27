@@ -1,0 +1,87 @@
+#home {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  margin-top: 150px;
+  scroll-margin-top: 123px;
+}
+.info {
+  width: 35%;
+}
+.info :first-child {
+  font-size: 25px;
+}
+p > img {
+  width: 60px;
+}
+p + h1 {
+  font-size: 100px;
+  color: rgb(220, 202, 135);
+  margin: 30px 0px;
+  font-weight: 600;
+}
+h1 + p {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.image {
+  width: 30%;
+  padding: 55px 0px;
+}
+#homeimage {
+  height: 550px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1300px) {
+  .info {
+    width: 40%;
+  }
+  .image {
+    width: 40%;
+  }
+  #homeimage {
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #home {
+    display: block;
+    padding-top: 30px;
+  }
+  .info {
+    width: 100%;
+    width: 90%;
+    margin-left: 5%;
+  }
+  .image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #homeimage {
+    margin-top: 20px;
+    height: 550px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 768px) {
+  #home {
+    margin-top: 100px;
+    scroll-margin-top: 83px;
+  }
+
+  p + h1 {
+    font-size: 70px;
+  }
+  #homeimage {
+    height: 400px;
+    object-fit: cover;
+  }
+}
