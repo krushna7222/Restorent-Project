@@ -1,0 +1,74 @@
+#menu {
+  background-color: black;
+  width: 100vw;
+  padding: 50px 0px;
+}
+
+#menumsg {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#winebeer {
+  width: 35%;
+  text-align: center;
+}
+
+#menuimg {
+  width: 30%;
+  text-align: center;
+}
+#menuimg > img {
+  width: 90%;
+  padding: 0px 5%;
+  text-align: center;
+}
+#cocktail {
+  width: 35%;
+  text-align: center;
+}
+
+#menu-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  #menumsg {
+    font-size: 20px;
+    margin-bottom: 7px;
+  }
+
+  #menu-container {
+    display: block;
+    text-align: center;
+    padding: 0px 5vw;
+  }
+
+  #menuid {
+    font-size: 50px;
+  }
+  #menuimg {
+    width: 100%;
+    text-align: center;
+  }
+  #menuimg > img {
+    width: 90%;
+    padding: 0px 5%;
+    margin: 30px 0px;
+    text-align: center;
+  }
+
+  #winebeer {
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+  }
+
+  #cocktail {
+    width: 90%;
+    padding: 0px 5%;
+    text-align: center;
+  }
+}
