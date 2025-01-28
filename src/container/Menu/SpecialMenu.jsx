@@ -27,6 +27,9 @@ const SpecialMenu = () => {
             <h2>Cocktails</h2>
           </div>
         </div>
+        <div id="menubtn">
+          <button>View More</button>
+        </div>
       </section>
     </>
   );
