@@ -34,6 +34,12 @@
   justify-content: space-evenly;
 }
 
+#menubtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
   #menumsg {
     font-size: 20px;
