@@ -22,10 +22,10 @@
   margin: 50px 10px 50px 0px;
 }
 #chef-text > p + p {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 #chef-text > p > img {
-  width: 55px;
+  width: 45px;
   margin-right: 15px;
 }
 #chef-image > img {
@@ -34,9 +34,27 @@
   margin-left: 15%;
   object-fit: cover;
 }
+#chef-text > h1 + p {
+  font-size: 25px;
+}
 
 #chef-text {
   width: 50%;
+}
+
+#chef-text > #name {
+  font-size: 20px;
+  margin: 50px 20px 30px 20px;
+  color: rgb(220, 202, 135);
+}
+#chef-text > #name + p {
+  font-size: 25px;
+  margin: 0px 20px 50px 20px;
+}
+
+#chef-text > #chef-sign > img {
+  width: 350px;
+  margin: 50px 20px 50px 20px;
 }
 
 @media screen and (max-width: 950px) {
@@ -61,10 +79,10 @@
   }
   #chef-text > p {
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 55px;
   }
   #chef-text > p + p {
-    margin-top: 0px;
+    margin-top: -10px;
   }
   #chef-text > h1 {
     font-size: 55px;
@@ -74,11 +92,22 @@
     width: 35px;
     margin-right: 10px;
   }
+  #chef-text > #chef-sign > img {
+    width: 250px;
+    margin: 50px 20px 50px 0px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #chef-text > h1 {
     font-size: 35px;
     margin: 40px 20px;
+  }
+  #chef-text > h1 + p {
+    font-size: 20px;
+  }
+  #chef-text > #chef-sign > img {
+    width: 150px;
+    margin: 10px 20px -40px 0px;
   }
 }
