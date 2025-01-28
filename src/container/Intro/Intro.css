@@ -1,0 +1,11 @@
+#intro-video {
+  height: auto;
+  width: 100vw;
+  padding: 50px 0px;
+}
+
+#intro-video > video {
+  width: 100%;
+  object-fit: fill;
+  background-color: black;
+}
