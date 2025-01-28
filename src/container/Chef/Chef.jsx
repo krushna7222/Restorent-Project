@@ -24,6 +24,11 @@ const Chef = () => {
           ingredients, supervising kitchen staff, and ensuring food safety and
           quality standards are met.
         </p>
+        <p id="name">Kevin Luo</p>
+        <p>Chef & Founder</p>
+        <p id="chef-sign">
+          <img src="src\assets\sign.png" alt="Chef-Sign-Image" />
+        </p>
       </div>
     </section>
   );
