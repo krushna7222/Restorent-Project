@@ -14,6 +14,10 @@ body {
   background-attachment: fixed;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   background-color: white;
   color: black;
