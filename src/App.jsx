@@ -10,6 +10,7 @@ import {
   Intro,
   Laurels,
   SpecialMenu,
+  Subscribe,
 } from "./container";
 import { Navbar } from "./components";
 import "./App.css";
@@ -25,6 +26,7 @@ const App = () => (
     <Laurels />
     <Gallery />
     <FindUs />
+    <Subscribe />
     <Footer />
   </div>
 );
