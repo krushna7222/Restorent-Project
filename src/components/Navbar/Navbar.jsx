@@ -23,14 +23,14 @@ const Navbar = () => {
               <a href="#laurels">Awards</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#find-us">Contact</a>
             </li>
           </ul>
         </div>
         <div id="options">
           <ul>
             <li>
-              <a href="#login">Login/Register /</a>
+              <a href="#login">Login / Register &nbsp;|</a>
             </li>
             <li>
               <a href="#booktable">Book Table</a>
@@ -57,10 +57,10 @@ const Navbar = () => {
                   <a href="#laurels">Awards</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#find-us">Contact</a>
                 </li>
                 <li>
-                  <a href="#login">Login/Register</a>
+                  <a href="#login">Login / Register</a>
                 </li>
                 <li>
                   <a href="#booktable">Book Table</a>
