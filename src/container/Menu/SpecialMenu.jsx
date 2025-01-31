@@ -1,5 +1,8 @@
 import React from "react";
 import "./SpecialMenu.css";
+import data from "./data.jsx"; // Update the path as necessary
+
+const { wines, cocktails } = data; // Destructure the needed data
 
 const SpecialMenu = () => {
   return (
@@ -19,12 +22,40 @@ const SpecialMenu = () => {
         <div id="menu-container">
           <div id="winebeer">
             <h2>Wine & Beer</h2>
+            {wines.map((wine, index) => (
+              <div className="menu-container">
+                <div key={index} className="wine-item">
+                  <h3>{wine.title}</h3>
+                  <div className="line-price">
+                    <div className="golden-line"></div>
+                    <p className="price" style={{ fontSize: "25px" }}>
+                      {wine.price}
+                    </p>
+                  </div>
+                </div>
+                <p>{wine.tags}</p>
+              </div>
+            ))}
           </div>
           <div id="menuimg">
             <img src="src\assets\menu.png" alt="Menu Image" />
           </div>
           <div id="cocktail">
             <h2>Cocktails</h2>
+            {cocktails.map((cocktail, index) => (
+              <div className="menu-container">
+                <div key={index} className="cocktail-item">
+                  <h3>{cocktail.title}</h3>
+                  <div className="line-price">
+                    <div className="golden-line"></div>
+                    <p className="price" style={{ fontSize: "25px" }}>
+                      {cocktail.price}
+                    </p>
+                  </div>
+                </div>
+                <p>{cocktail.tags}</p>
+              </div>
+            ))}
           </div>
         </div>
         <div id="menubtn">
