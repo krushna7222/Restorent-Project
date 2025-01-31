@@ -9,14 +9,14 @@ const Laurels = () => {
         <div id="head">
           <p>Awards & recognition</p>
           <p>
-            <img src="src\assets\spoon.svg" alt="Spoon" />
+            <img src="spoon.svg" alt="Spoon" />
           </p>
           <h1>Our Laurels</h1>
         </div>
         <div id="awards">
           <div className="award">
             <div className="award-img">
-              <img src="src\assets\award01.png" alt="Award-1" />
+              <img src="award01.png" alt="Award-1" />
             </div>
             <div className="award-text">
               <h2>Rising Star</h2>
@@ -32,7 +32,7 @@ const Laurels = () => {
           </div>
           <div className="award">
             <div className="award-img">
-              <img src="src\assets\award02.png" alt="Award-2" />
+              <img src="award02.png" alt="Award-2" />
             </div>
             <div className="award-text">
               <h2>Bib Gourmond</h2>
@@ -47,7 +47,7 @@ const Laurels = () => {
           </div>
           <div className="award">
             <div className="award-img">
-              <img src="src\assets\award03.png" alt="Award-3" />
+              <img src="award03.png" alt="Award-3" />
             </div>
             <div className="award-text">
               <h2>Outstanding Chef</h2>
@@ -63,7 +63,7 @@ const Laurels = () => {
           </div>
           <div className="award">
             <div className="award-img">
-              <img src="src\assets\award05.png" alt="Award-5" />
+              <img src="award05.png" alt="Award-5" />
             </div>
             <div className="award-text">
               <h2>AA Hospitality</h2>
@@ -80,7 +80,7 @@ const Laurels = () => {
         </div>
       </div>
       <div id="laurel-image">
-        <img src="src\assets\laurels.png" alt="laurel" />
+        <img src="laurels.png" alt="laurel" />
       </div>
     </section>
   );
