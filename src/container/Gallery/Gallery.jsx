@@ -9,7 +9,7 @@ const Gallery = () => {
       <div id="gallary-description">
         <p>Instagram</p>
         <p>
-          <img src="src\assets\spoon.svg" alt="Spoon" />
+          <img src="spoon.svg" alt="Spoon" />
         </p>
         <h1>Photo Gallery</h1>
         <h4>"Welcome to Our Culinary Wonderland!"</h4>
