@@ -9,7 +9,7 @@ const AboutUs = () => {
         <div className="about">
           <h1>About Us</h1>
           <p>
-            <img src="src\assets\spoon.svg" alt="Spoon" />
+            <img src="spoon.svg" alt="Spoon" />
           </p>
           <p>
             At FineDine Restaurant, we take pride in offering a unique blend of
@@ -24,12 +24,12 @@ const AboutUs = () => {
           <button>Know More</button>
         </div>
         <div className="image" id="bgimg">
-          <img id="knifeimage" src="src\assets\knife.png" alt="Knife" />
+          <img id="knifeimage" src="knife.png" alt="Knife" />
         </div>
         <div className="history">
           <h1>Our History</h1>
           <p>
-            <img src="src\assets\spoon.svg" alt="Spoon" />
+            <img src="spoon.svg" alt="Spoon" />
           </p>
           <p>
             Our story began with a passion for food and a dream to create a
