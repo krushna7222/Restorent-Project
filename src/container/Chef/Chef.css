@@ -24,6 +24,9 @@
 #chef-text > p + p {
   margin-top: -10px;
 }
+#chef-text :nth-child(2) > img {
+  width: 60px;
+}
 #chef-text > p > img {
   width: 45px;
   margin-right: 15px;
@@ -46,6 +49,7 @@
   font-size: 20px;
   margin: 50px 20px 30px 20px;
   color: rgb(220, 202, 135);
+  font-family: "Crafty Girls", serif;
 }
 #chef-text > #name + p {
   font-size: 25px;
