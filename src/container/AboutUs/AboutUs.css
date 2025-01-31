@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
-  background-image: url(D:\Project\Restorent-Project\src\assets\G.png);
+  background-image: url(/G.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 500px;
@@ -51,8 +51,4 @@
     padding: 0px;
     margin-left: 5vw;
   }
-  /* #bgimg {
-    display: flex;
-    justify-content: center;
-  } */
 }
