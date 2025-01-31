@@ -12,7 +12,7 @@ const SpecialMenu = () => {
           <div>
             <h3 id="menumsg">Menu that fits you palatte</h3>
             <p align="center">
-              <img src="src\assets\spoon.svg" alt="Spoon" />
+              <img src="spoon.svg" alt="Spoon" />
             </p>
             <h1 align="center" id="menuid">
               Today's Special
@@ -38,7 +38,7 @@ const SpecialMenu = () => {
             ))}
           </div>
           <div id="menuimg">
-            <img src="src\assets\menu.png" alt="Menu Image" />
+            <img src="menu.png" alt="Menu Image" />
           </div>
           <div id="cocktail">
             <h2>Cocktails</h2>
