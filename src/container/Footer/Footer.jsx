@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div id="footer">
       <div className="logo-image">
-        <img src="src\assets\navlogo.png" alt="Logo" />
+        <img src="navlogo.png" alt="Logo" />
       </div>
       <div class="row">
         <a href="#">
