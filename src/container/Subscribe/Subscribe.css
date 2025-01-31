@@ -1,0 +1,78 @@
+#subscribe {
+  height: auto;
+  width: 100vw;
+  padding: 100px 0px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#subscribe > div {
+  border: 1px solid rgb(220, 202, 135);
+  padding: 10vh 20vw;
+  border-top: none;
+}
+
+#subscribe > div > h1 {
+  color: rgb(220, 202, 135);
+  font-size: 60px;
+  text-align: center;
+}
+#subscribe > div > p {
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#subscribe > div > form > :first-child {
+  width: 75%;
+  padding: 15px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border: 1px solid rgb(220, 202, 135);
+  border-radius: 5px;
+  margin-right: 40px;
+}
+#subscribe > div > form > :first-child > input {
+  background-color: transparent;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+}
+#subscribe > div > form > div {
+  display: inline-block;
+}
+@media screen and (max-width: 1262px) {
+  #subscribe > div > form > :first-child {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #subscribe > div > form > :nth-child(2) {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #subscribe {
+    width: 100vw;
+  }
+  #subscribe > div {
+    width: 80vw;
+    padding: 5vh 5vw;
+    border-top: none;
+  }
+
+  #subscribe > div > h1 {
+    color: rgb(220, 202, 135);
+    font-size: 30px;
+    text-align: center;
+  }
+  #subscribe > div > p {
+    font-size: 16px;
+  }
+}
