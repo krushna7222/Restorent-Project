@@ -21,27 +21,40 @@ import Register from "./container/Register/Register";
 const App = () => {
   const [isLogin, setIsLogin] = useState(true);
   return (
-    <>
-      <Navbar />
-      <Header />
-      <AboutUs />
-      <SpecialMenu />
-      <Chef />
-      <Intro />
-      <Laurels />
-      <Gallery />
-      <FindUs />
-      <Subscribe />
-      <Footer />
-
-      {/* <div>
-        {isLogin ? (
-          <Login onSwitch={() => setIsLogin(false)} />
-        ) : (
-          <Register onSwitch={() => setIsLogin(true)} />
-        )}
-      </div> */}
-    </>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Header />
+              <AboutUs />
+              <SpecialMenu />
+              <Chef />
+              <Intro />
+              <Laurels />
+              <Gallery />
+              <FindUs />
+              <Subscribe />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <div>
+              {isLogin ? (
+                <Login onSwitch={() => setIsLogin(false)} />
+              ) : (
+                <Register onSwitch={() => setIsLogin(true)} />
+              )}
+            </div>
+          }
+        />
+      </Routes>
+    </Router>
   );
 };
 
