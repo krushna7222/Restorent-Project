@@ -11,12 +11,21 @@
 }
 
 #winebeer {
-  width: 35%;
+  width: 30%;
   text-align: center;
+}
+#winebeer > h2,
+#cocktail > h2 {
+  font-size: 35px;
+  margin-bottom: 50px;
+}
+
+#menu-container {
+  margin: 0 2.5%;
 }
 
 #menuimg {
-  width: 30%;
+  width: 40%;
   text-align: center;
 }
 #menuimg > img {
@@ -25,7 +34,7 @@
   text-align: center;
 }
 #cocktail {
-  width: 35%;
+  width: 30%;
   text-align: center;
 }
 
@@ -38,6 +47,51 @@
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.golden-line {
+  width: 90px;
+  height: 1.5px;
+  background-color: rgb(203, 174, 69);
+  margin: 15px 0;
+  border: none;
+}
+
+.cocktail-item > h3,
+.wine-item > h3 {
+  color: rgb(253, 231, 151);
+  font-size: 25px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.price {
+  font-size: 25px;
+  margin-left: 20px;
+}
+.menu-container {
+  margin-bottom: 50px;
+}
+.menu-container :nth-child(2) {
+  text-align: start;
+  text-wrap: wrap;
+  font-size: 18px;
+}
+
+.wine-item,
+.cocktail-item {
+  display: flex;
+  justify-content: space-between;
+}
+.wine-item > h3,
+.cocktail-item > h3 {
+  width: 40%;
+}
+
+.line-price {
+  width: 50%;
+  display: flex;
 }
 
 @media screen and (max-width: 768px) {
@@ -64,6 +118,14 @@
     padding: 0px 5%;
     margin: 30px 0px;
     text-align: center;
+  }
+  #winebeer > h2,
+  #cocktail > h2 {
+    font-size: 30px;
+    margin: 50px 0;
+  }
+  .menu-container :nth-child(2) {
+    font-size: 16px;
   }
 
   #winebeer {
