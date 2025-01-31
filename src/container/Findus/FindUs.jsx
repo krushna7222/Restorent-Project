@@ -7,7 +7,7 @@ const FindUs = () => {
       <div id="findus-text">
         <p>Contact</p>
         <p>
-          <img src="src\assets\spoon.svg" alt="Spoon" />
+          <img src="spoon.svg" alt="Spoon" />
         </p>
         <h1>Find Us</h1>
         <p>Worli Mumbai</p>
@@ -17,7 +17,7 @@ const FindUs = () => {
         <button>Visit Us</button>
       </div>
       <div id="findus-image">
-        <img src="src\assets\findus.png" alt="" />
+        <img src="findus.png" alt="" />
       </div>
     </section>
   );
