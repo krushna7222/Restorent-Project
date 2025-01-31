@@ -9,7 +9,7 @@ const Header = () => {
         <div className="info">
           <p>Chase the new flavour</p>
           <p>
-            <img src="src\assets\spoon.svg" alt="Spoon" />
+            <img src="spoon.svg" alt="Spoon" />
           </p>
           <h1>The Key to Fine Dining</h1>
           <p>
@@ -22,7 +22,7 @@ const Header = () => {
           <button>Explore Menu</button>
         </div>
         <div className="image">
-          <img id="homeimage" src="src\assets\welcome.png" alt="Top Image" />
+          <img id="homeimage" src="welcome.png" alt="Top Image" />
         </div>
       </section>
     </>
