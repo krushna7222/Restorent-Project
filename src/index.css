@@ -12,6 +12,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: "Jura", serif;
+  /* font-family: "Julius Sans One", serif; */
+  /* font-weight: 500; */
 }
 
 html {
@@ -26,6 +29,7 @@ button {
   border: none;
   cursor: pointer;
   font-weight: 600;
+  font-family: "Merienda", serif;
 }
 
 section {
