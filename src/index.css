@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("bg.png");
+  background: url("bg.png");
   width: 100vw;
   height: auto;
   background-position: center;
@@ -13,8 +13,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Jura", serif;
-  /* font-family: "Julius Sans One", serif; */
-  /* font-weight: 500; */
 }
 
 html {
