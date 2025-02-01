@@ -17,6 +17,7 @@ import { Navbar } from "./components";
 import "./App.css";
 import Login from "./container/Login/Login";
 import Register from "./container/Register/Register";
+import BookTable from "./container/BookTable/BookTable";
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -53,6 +54,7 @@ const App = () => {
             </div>
           }
         />
+        <Route path="/booktable" element={<BookTable />} />
       </Routes>
     </Router>
   );
