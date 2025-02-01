@@ -1,8 +1,8 @@
 import React from "react";
 import "./SpecialMenu.css";
-import data from "./data.jsx"; // Update the path as necessary
+import data from "./data.jsx";
 
-const { wines, cocktails } = data; // Destructure the needed data
+const { wines, cocktails } = data;
 
 const SpecialMenu = () => {
   return (
