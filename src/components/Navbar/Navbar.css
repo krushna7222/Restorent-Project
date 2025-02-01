@@ -17,9 +17,11 @@ a {
   text-decoration: none;
   color: #f5efff;
 }
+
 #image {
   z-index: 2;
 }
+
 #navimg {
   width: 130px;
   height: 130px;
@@ -36,7 +38,6 @@ a {
 
 #menuitems > ul > li {
   margin-left: 5vw;
-  /* font-weight: 700; */
 }
 
 #options {
@@ -59,8 +60,7 @@ i {
   margin-right: 30px;
 }
 
-/* megamenu  */
-
+/* Mega menu visibility */
 .rightmenu {
   display: none;
   position: relative;
@@ -70,25 +70,161 @@ i {
   position: absolute;
   width: 100vw;
   top: 40px;
-  right: -0px;
+  right: 0;
   background-color: rgb(18, 21, 25);
   padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
+.rightmenu.open-menu .megamenu {
+  visibility: visible;
+  opacity: 1; /* Show when toggled */
+}
+
+.megamenu > li {
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+}
+
+.megamenu > li > a {
+  text-decoration: none;
+  color: rgb(220, 202, 135);
+}
+
+.megamenu > li > a:hover {
+  font-weight: 900;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 950px) {
+  /* Hide desktop menu items */
+  #menuitems {
+    display: none;
+  }
+
+  /* Hide the options menu on mobile */
+  #options {
+    display: none;
+  }
+
+  /* Show the hamburger menu for mobile screens */
+  .rightmenu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    height: 100px;
+    font-size: 16px;
+  }
+
+  #navimg {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+}
+
+/* Navbar */
+#navbar {
+  width: 100vw;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgb(3, 3, 3);
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 2;
+  font-family: "Space Grotesk", serif;
+}
+
+#image {
+  z-index: 2;
+}
+
+#navimg {
+  width: 130px;
+  height: 130px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+#menuitems > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuitems > ul > li {
+  margin-left: 5vw;
+}
+
+#options {
+  margin-right: 10px;
+}
+
+#options > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+}
+
+#options > ul > li {
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+i {
+  margin-right: 30px;
+}
+
+/* Mega Menu */
+.rightmenu {
+  display: none;
+  position: relative;
+}
+
+.megamenu {
+  position: absolute;
+  width: 100vw;
+  top: 40px;
+  right: 0;
+  background-color: rgb(18, 21, 25);
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
 .rightmenu > ul,
 .megamenu > li {
   list-style-type: none;
   padding: 10px;
   font-size: 20px;
   text-align: center;
-  text-align: center;
 }
+
 .megamenu > li {
   border-bottom: 1px solid gray;
 }
+
 .megamenu > li > a {
   text-decoration: none;
   color: rgb(220, 202, 135);
 }
+
 .megamenu > li > a:hover {
   font-weight: 900;
 }
@@ -107,27 +243,31 @@ i {
   width: 100%;
 }
 
-/*  */
-
+/* Responsive Design */
 @media screen and (max-width: 950px) {
   #navbar {
     font-size: 18px;
   }
+
   .rightmenu {
     display: block;
   }
+
   #menuitems {
     display: none;
   }
+
   #options {
     display: none;
   }
 }
+
 @media screen and (max-width: 768px) {
   #navbar {
     height: 100px;
     font-size: 16px;
   }
+
   #navimg {
     width: 90px;
     height: 90px;
