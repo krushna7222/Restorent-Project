@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   const closeMenu = () => {
-    setIsMenuOpen(false); // Hide the menu when a navigation item is clicked
+    setIsMenuOpen(false);
   };
 
   return (
