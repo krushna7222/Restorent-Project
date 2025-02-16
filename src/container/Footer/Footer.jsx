@@ -37,7 +37,7 @@ const Footer = () => {
       </div>
       <div class="row">
         FineDine Restaurant Copyright © 2025 - All rights reserved || Designed
-        By: Developers
+        By:Front-End Developer
       </div>
     </div>
   );
