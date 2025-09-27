@@ -1,5 +1,6 @@
 import { useState } from "react";
 import React from "react";
+import { ToastContainer } from "react-toastify";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import {
   AboutUs,
@@ -22,41 +23,54 @@ import BookTable from "./container/BookTable/BookTable";
 const App = () => {
   const [isLogin, setIsLogin] = useState(true);
   return (
-    <Router>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navbar />
-              <Header />
-              <AboutUs />
-              <SpecialMenu />
-              <Chef />
-              <Intro />
-              <Laurels />
-              <Gallery />
-              <FindUs />
-              <Subscribe />
-              <Footer />
-            </>
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <div>
-              {isLogin ? (
-                <Login onSwitch={() => setIsLogin(false)} />
-              ) : (
-                <Register onSwitch={() => setIsLogin(true)} />
-              )}
-            </div>
-          }
-        />
-        <Route path="/booktable" element={<BookTable />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Header />
+                <AboutUs />
+                <SpecialMenu />
+                <Chef />
+                <Intro />
+                <Laurels />
+                <Gallery />
+                <FindUs />
+                <Subscribe />
+                <Footer />
+              </>
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <div>
+                {isLogin ? (
+                  <Login onSwitch={() => setIsLogin(false)} />
+                ) : (
+                  <Register onSwitch={() => setIsLogin(true)} />
+                )}
+              </div>
+            }
+          />
+          <Route path="/booktable" element={<BookTable />} />
+        </Routes>
+      </Router>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    </>
   );
 };
 
