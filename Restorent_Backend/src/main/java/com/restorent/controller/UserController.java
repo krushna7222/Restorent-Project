@@ -4,9 +4,8 @@ import java.util.*;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
@@ -19,14 +18,12 @@ import com.restorent.entity.LoginRequest;
 import com.restorent.entity.RegisterRequest;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import com.restorent.entity.User;
-import com.restorent.entity.UserResponce;
 import com.restorent.service.UserService;
 import com.restorent.utils.ApiResponse;
 
 @RestController
 @RequestMapping("/api/v1")
+@CrossOrigin("*")
 public class UserController {
 	
 	@Autowired
@@ -83,11 +80,16 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(new ApiResponse<>(400, null,"Invalid.. "));
         }
     }
+    
+    @PostMapping("/subscribe")
+    public ResponseEntity<ApiResponse<String>> subscribe(@RequestBody Map<String, String> request) {
+        String email = request.get("email");
+        userService.subscribe(email);
 
-	
-	
-	
-	
+        ApiResponse<String> response = new ApiResponse<>(200, null, "Suscribed Successfull..");
+        return ResponseEntity.ok(response);
+    }
+
 	 public boolean isValidToken(String token) {
 	        return sessions.containsKey(token);
 	    }
@@ -96,6 +98,4 @@ public class UserController {
 	public String test() {
 		return "Project Is Running";
 	}
-	
-
 }
