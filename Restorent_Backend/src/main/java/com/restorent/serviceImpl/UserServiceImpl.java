@@ -38,21 +38,30 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public String register(RegisterRequest req) {
-		
-		if(req.name == null && req.email == null && req.password == null) {
-			throw new IllegalArgumentException("Data Is NULL");
-		}
-		
-		User u = new User();
-		
-		u.setName(req.getName());
-		u.setEmail(req.getEmail());
-		u.setPassword(password.hashPassword(req.getPassword()));
-		
-		User data = user.save(u);
-	
-		return req.getName();	
+	    
+	    if(req.getName() == null || req.getEmail() == null || req.getPassword() == null) {
+	        throw new IllegalArgumentException("Data is NULL");
+	    }
+
+	    if(user.findByEmail(req.getEmail()).isPresent()) {
+	        throw new IllegalArgumentException("Email already exists");
+	    }
+
+	    if(req.getPhone() != null && user.findByPhone(req.getPhone()).isPresent()) {
+	        throw new IllegalArgumentException("Phone number already exists");
+	    }
+	    
+	    User u = new User();
+	    u.setName(req.getName());
+	    u.setEmail(req.getEmail());
+	    u.setPhone(req.getPhone()); 
+	    u.setPassword(password.hashPassword(req.getPassword()));
+	    
+	    user.save(u);
+
+	    return req.getName();
 	}
+
 
 	@Override
 	public boolean login(LoginRequest req) {
