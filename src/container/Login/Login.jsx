@@ -24,13 +24,15 @@ const Login = ({ onSwitch }) => {
       });
 
       if (!response.ok) {
-        console.log(response.data);
+        // console.log(response.data);
         throw new Error(response.data);
       }
 
       const data = await response.json();
       console.log("✅ Login success:", data);
-
+      console.log();
+      console.log(data.data);
+      localStorage.setItem("user", JSON.stringify(data));
       toast.success("Login Successful!");
       navigate("/");
     } catch (error) {
