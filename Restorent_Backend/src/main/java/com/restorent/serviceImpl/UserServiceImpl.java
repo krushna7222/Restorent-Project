@@ -1,6 +1,8 @@
 package com.restorent.serviceImpl;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -20,6 +22,7 @@ import com.restorent.repository.BookingTablesRepository;
 import com.restorent.repository.UserRepository;
 import com.restorent.service.UserService;
 import com.restorent.utils.PasswordUtil;
+import com.restorent.utils.SessionManager;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -35,6 +38,10 @@ public class UserServiceImpl implements UserService {
 	
 	@Autowired
 	private JavaMailSender mailSender;
+	
+	@Autowired
+	private SessionManager sessionManager;
+
 
 	@Override
 	public String register(RegisterRequest req) {
@@ -102,14 +109,35 @@ public class UserServiceImpl implements UserService {
 			
 		return "Table Booking Done";
 	}
+	
 
 	@Override
-	public List<BookingTables> mybooking() {
-		
-		List<BookingTables> booking = bookTable.findAll();
-		
-		return booking;
+	public List<BookingTables> mybooking(String token) {
+	    String email = sessionManager.getEmail(token);
+	    
+	    System.out.println("Email from token: " + email);
+
+	    if (email == null) {
+	        throw new IllegalArgumentException("Invalid token, session not found");
+	    }
+
+	     List<BookingTables> bookings = bookTable.findByEmail(email); // fetch only this user's bookings
+	     
+	     System.out.println(bookings);
+	     
+	     return bookings;
 	}
+
+
+
+
+//	@Override
+//	public List<BookingTables> mybooking() {
+//		
+//		List<BookingTables> booking = bookTable.findAll();
+//		
+//		return booking;
+//	}
 
 	@Override
 	public void subscribe(String email) {
