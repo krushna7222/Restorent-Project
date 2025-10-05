@@ -19,6 +19,7 @@ import "./App.css";
 import Login from "./container/Login/Login";
 import Register from "./container/Register/Register";
 import BookTable from "./container/BookTable/BookTable";
+import Booking from "./container/BookTable/Booking";
 
 const App = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -56,6 +57,7 @@ const App = () => {
               </div>
             }
           />
+          <Route path="/mybooking" element={<Booking />} />
           <Route path="/booktable" element={<BookTable />} />
         </Routes>
       </Router>
