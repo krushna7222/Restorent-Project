@@ -105,8 +105,8 @@ const Navbar = () => {
       <div id="options" className={isMenuOpen ? "open-menu" : ""}>
         <ul>
           <li>
-            <Link to="/booktable" onClick={closeMenu}>
-              Book Table
+            <Link to="/mybooking" onClick={closeMenu}>
+              Table Booking
             </Link>
           </li>
 
@@ -159,8 +159,8 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <Link to="/booktable" onClick={closeMenu}>
-                  Book Table
+                <Link to="/mybooking" onClick={closeMenu}>
+                  Table Booking
                 </Link>
               </li>
               {!isLoggedIn ? (
